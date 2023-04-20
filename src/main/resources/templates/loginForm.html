@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<title>GOING</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+	
+	<link href="https://fonts.googleapis.com/css?family=Black Han Sans:400" rel="stylesheet">
+ 	
+ 	<link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<main>
+		<div class="container">
+	
+			<section>
+				<div class="container main-div">
+					<div class="row center-div">
+						
+						<div class="col-12 b-box">
+						
+							<div class="pt-4 pb-2 text-center">
+								<img src="assets/images/going.png">
+							</div>
+							
+							<!-- Default Tabs -->
+							<ul class="nav nav-tabs d-flex" id="myTabjustified" role="tablist">
+								<li class="nav-item flex-fill" role="presentation">
+									<button class="nav-link w-100 active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-justified"
+										type="button" role="tab" aria-controls="home" aria-selected="true">고객 로그인</button>
+								</li>
+								<li class="nav-item flex-fill" role="presentation">
+									<button class="nav-link w-100" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-justified"
+										type="button" role="tab" aria-controls="profile" aria-selected="false">사업자 로그인</button>
+								</li>
+							</ul>
+							<div class="tab-content pt-2" id="myTabjustifiedContent">
+								<div class="tab-pane fade show active" id="home-justified" role="tabpanel" aria-labelledby="home-tab">
+									<div class="id-form">
+										<input type="text" name="userId" id="userId" class="form-control" placeholder="이메일">
+									</div>
+									
+									<div class="pw-form">
+										<input type="password" name="userPwd" id="userPwd" class="form-control" placeholder="비밀번호">
+									</div>
+									
+									<div class="login-btn">
+										<button class="btn btn-primary form-control" type="button" id="loginBtn">로그인</button>
+									</div>
+									
+									<div class="kakao">
+										<img src="assets/images/kakao.png">
+									</div>
+									
+									<hr>
+									
+									<div class="row text-center reset">
+										<div class="col-6">
+											<a href="">비밀번호 재설정</a>
+										</div>
+										
+										<div class="col-6">
+											<a href="/signUpForm">회원가입</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="profile-justified" role="tabpanel" aria-labelledby="profile-tab">
+									<div class="id-form">
+										<input type="text" name="userId" id="userId" class="form-control" placeholder="이메일">
+									</div>
+									
+									<div class="pw-form">
+										<input type="password" name="userPwd" id="userPwd" class="form-control" placeholder="비밀번호">
+									</div>
+									
+									<div class="login-btn">
+										<button class="btn btn-primary form-control" type="button" id="loginBtn">사업자 로그인</button>
+									</div>
+									
+									<hr>
+									
+									<div class="row text-center reset">
+										<div class="col-6">
+											<span>비밀번호 재설정</span>
+										</div>
+										
+										<div class="col-6">
+											<span>회원가입</span>
+										</div>
+									</div>
+								</div>
+							</div><!-- End Default Tabs -->
+	
+						</div>
+					</div>
+				</div>
+	
+			</section>
+	
+		</div>
+	</main><!-- End #main -->
+	
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendor/echarts/echarts.min.js"></script>
+
+</body>
+
+</html>

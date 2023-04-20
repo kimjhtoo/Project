@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<title>GOING</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+	
+	<link href="https://fonts.googleapis.com/css?family=Black Han Sans:400" rel="stylesheet">
+ 	
+ 	<link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+	<link href="/assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<main>
+		<div class="container">
+	
+			<section>
+				<div class="container main-div">
+					<div class="row center-div">
+						
+						<div class="col-12 signup-box">
+						
+							<div class="pt-4 pb-2 text-center">
+								<h1>회원가입</h1>
+							</div>
+							
+							<div class="row pb-20">
+								<div class="col-8">
+									<input type="text" name="userPhone" id="userPhone" class="form-control" placeholder="01012345678">
+								</div>
+								<div class="col-4 auth">
+									<button class="btn btn-primary form-control" type="button" id="authBtn">인증코드 전송</button>
+								</div>
+							</div>
+							
+							<div class="row pb-20">
+								<div class="col-8">
+									<input type="text" name="smsCode" id="smsCode" class="form-control" placeholder="전송받은 코드">
+								</div>
+								<div class="col-4 smsCode">
+									<button class="btn btn-primary form-control" type="button" id="codeBtn">코드 확인</button>
+								</div>
+							</div>
+							
+							<div class="pb-20">
+								<input type="text" name="userId" id="userId" class="form-control" placeholder="이메일">
+							</div>
+							
+							<div class="pb-20">
+								<input type="password" name="userPwd" id="userPwd" class="form-control" placeholder="비밀번호">
+							</div>
+							
+							<div class="pb-20">
+								<input type="password" name="reUserPwd" id="reUserPwd" class="form-control" placeholder="비밀번호 확인">
+							</div>
+							
+							<div class="pb-20">
+								<input type="text" name="userName" id="userName" class="form-control" placeholder="이름">
+							</div>
+							
+							<div class="signup-btn">
+								<button class="btn btn-secondary form-control" type="button" id="signUpBtn">회원가입</button>
+							</div>
+	
+						</div>
+					</div>
+				</div>
+	
+			</section>
+	
+		</div>
+	</main><!-- End #main -->
+	
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendor/echarts/echarts.min.js"></script>
+
+</body>
+
+</html>
