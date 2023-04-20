@@ -21,9 +21,9 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 @EnableWebSecurity
 public class SecurityConfig {
-	
-	@Bean	
-    public WebSecurityCustomizer configure() {
+
+    @Bean
+    WebSecurityCustomizer configure() {
         return (web) -> web.ignoring().mvcMatchers(
                 "/webjars/jquery/**",
                 "/assets/css/**",
@@ -33,7 +33,7 @@ public class SecurityConfig {
     }
 	
 	@Bean
-    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+    SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 		
 				http.csrf().disable()
                     .headers()
@@ -65,18 +65,18 @@ public class SecurityConfig {
     }
 	
 	@Bean
-	public AuthenticationSuccessHandler loginSuccessHandler() {
+	AuthenticationSuccessHandler loginSuccessHandler() {
 		return new BsSuccessHandler();
 	}
 	
 	@Bean
-	public AuthenticationFailureHandler loginFailureHandler() {
+	AuthenticationFailureHandler loginFailureHandler() {
 		return new BsFailureHandler();
 	}
 	
 	// Bean 등록하면 알아서 matches 호출
     @Bean
-    public PasswordEncoder passwordEncoder() {
+    PasswordEncoder passwordEncoder() {
         return new BsPasswordEncoder();
     }
     
