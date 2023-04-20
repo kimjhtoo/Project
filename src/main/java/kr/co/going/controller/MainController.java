@@ -9,19 +9,19 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class MainController {
 	
-	@GetMapping("/")
+	@GetMapping("/1")
 	public String getMain() {
 		
 		return "main";
 	}
 	
-	@GetMapping("/loginForm")
+	@GetMapping("/2")
 	public String getLoginForm() {
 		
 		return "loginForm";
 	}
 	
-	@GetMapping("/signUpForm")
+	@GetMapping("/3")
 	public String getSignUpForm() {
 		
 		return "signUpForm";
