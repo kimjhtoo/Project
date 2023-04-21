@@ -127,10 +127,6 @@ a:hover {
   width: 100%;	
 }
 
-.nav-item {
-  width: 200px;
-}
-
 .dates-1,
 .dates-2 {
   border-right: 2px solid lightgray;
@@ -142,7 +138,8 @@ a:hover {
 }
 
 .member-cnt {
-  border-right: 2px solid lightgray;	
+  border-right: 2px solid lightgray;
+  padding-left: 0;
 }
 
 .form-select {
