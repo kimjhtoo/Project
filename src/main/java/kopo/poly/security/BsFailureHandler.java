@@ -1,4 +1,4 @@
-package kr.co.going.security;
+package kopo.poly.security;
 
 import java.io.IOException;
 
