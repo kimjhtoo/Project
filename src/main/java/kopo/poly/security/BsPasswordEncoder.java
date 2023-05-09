@@ -1,4 +1,4 @@
-package kr.co.going.security;
+package kopo.poly.security;
 
 import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.security.crypto.password.PasswordEncoder;
