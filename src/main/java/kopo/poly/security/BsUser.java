@@ -1,11 +1,11 @@
-package kr.co.going.security;
+package kopo.poly.security;
 
 import java.util.Collection;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import kr.co.going.model.Member;
+import kopo.poly.dto.MemberDTO;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -21,7 +21,7 @@ public class BsUser implements UserDetails {
 	
 	private static final long serialVersionUID = 1L;
 	
-	private Member member;
+	private MemberDTO member;
 
 	private String username;
 	
